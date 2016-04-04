@@ -27,8 +27,6 @@ public class MainActivity extends Activity {
                 Toast.makeText(getApplicationContext(), "Loading Soccer data", Toast.LENGTH_SHORT).show();
                 Intent myIntent = new Intent(MainActivity.this, SoccerRss.class);
                 startActivity(myIntent);
-
-
             }
         });
         ufc.setOnClickListener(new View.OnClickListener() {
