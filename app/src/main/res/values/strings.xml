@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Project_Demo</string>
+    <string name="sports_universe">Sports Universe</string>
+    <string name="soccer">SOCCER</string>
+    <string name="ufc">UFC</string>
+    <string name="tennis">TENNIS</string>
+    <string name="rugby">Rugby</string>
+    <string name="action_settings">Settings</string>
+</resources>
