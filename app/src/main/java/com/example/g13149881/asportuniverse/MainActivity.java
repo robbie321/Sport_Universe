@@ -35,7 +35,8 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(),"Loading UFC data", Toast.LENGTH_SHORT).show();
-
+                Intent myIntent = new Intent(MainActivity.this, UFCrss.class);
+                startActivity(myIntent);
 
             }
         });
@@ -43,6 +44,8 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(),"Loading Rugby data", Toast.LENGTH_SHORT).show();
+                Intent myIntent = new Intent(MainActivity.this, RugbyRss.class);
+                startActivity(myIntent);
             }
         });
     }
