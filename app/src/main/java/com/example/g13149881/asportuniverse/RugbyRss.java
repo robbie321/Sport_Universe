@@ -1,5 +1,6 @@
 package com.example.g13149881.asportuniverse;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,7 +10,7 @@ import android.widget.Toast;
 /**
  * Created by g13155105 on 04/04/2016.
  */
-public class RugbyRss {
+public class RugbyRss extends Activity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,8 +25,8 @@ public class RugbyRss {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "Home selected", Toast.LENGTH_SHORT).show();
-                Intent myIntent = new Intent(SoccerRss.this, MainActivity.class);
-                SoccerRss.this.startActivity(myIntent);
+                Intent myIntent = new Intent(RugbyRss.this, MainActivity.class);
+                RugbyRss.this.startActivity(myIntent);
 
 
             }
