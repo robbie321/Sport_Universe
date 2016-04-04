@@ -7,32 +7,30 @@
     tools:context="com.example.g13149881.asportuniverse.MainActivity">
 
     <ImageButton
-        android:layout_width="130dp"
+        android:layout_width="match_parent"
         android:layout_height="130dp"
         android:text="@string/soccer"
         android:background="@drawable/soccer"
         android:id="@+id/soccer_button"
-        android:layout_marginTop="48dp"
         android:layout_below="@+id/textView2"
         android:layout_alignParentStart="true" />
     <Button
-        android:layout_width="130dp"
+        android:layout_width="match_parent"
         android:layout_height="144dp"
         android:text="@string/ufc"
         android:background="@drawable/ufc"
         android:id="@+id/ufc_button"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="78dp" />
+        android:layout_above="@+id/ufc_textView"
+        android:layout_alignParentStart="true" />
     <ImageButton
-        android:layout_width="130dp"
+        android:layout_width="match_parent"
         android:layout_height="130dp"
         android:background="@drawable/rugby"
         android:id="@+id/rugby_button"
         android:contentDescription="@string/rugby"
-        android:layout_alignTop="@+id/soccer_button"
-        android:layout_alignParentEnd="true"
-        android:layout_alignBottom="@+id/soccer_button" />
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/soccer_textview"
+        android:layout_above="@+id/rugby_textview" />
 
     <TextView
         android:layout_width="fill_parent"
@@ -62,9 +60,9 @@
         android:id="@+id/rugby_textview"
         android:gravity="center"
         android:textStyle="bold"
-        android:layout_alignBottom="@+id/soccer_textview"
-        android:layout_alignStart="@+id/rugby_button"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:layout_above="@+id/ufc_button"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="130sp"
@@ -73,9 +71,8 @@
         android:id="@+id/ufc_textView"
         android:gravity="center"
         android:textStyle="bold"
+        android:textColor="#ffffff"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="57dp"
-        android:textColor="#ffffff" />
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
