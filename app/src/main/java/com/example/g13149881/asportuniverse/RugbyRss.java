@@ -24,7 +24,6 @@ public class RugbyRss extends Activity{
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Home selected", Toast.LENGTH_SHORT).show();
                 Intent myIntent = new Intent(RugbyRss.this, MainActivity.class);
                 RugbyRss.this.startActivity(myIntent);
 

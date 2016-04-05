@@ -24,7 +24,6 @@ public class SoccerRss extends Activity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Home selected", Toast.LENGTH_SHORT).show();
                 Intent myIntent = new Intent(SoccerRss.this, MainActivity.class);
                 SoccerRss.this.startActivity(myIntent);
 

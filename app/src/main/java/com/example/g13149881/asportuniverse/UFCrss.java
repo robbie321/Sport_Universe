@@ -20,7 +20,6 @@ public class UFCrss extends Activity{
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Home selected", Toast.LENGTH_SHORT).show();
                 Intent myIntent = new Intent(UFCrss.this, MainActivity.class);
                 UFCrss.this.startActivity(myIntent);
             }

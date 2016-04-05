@@ -3,6 +3,7 @@ package com.example.g13149881.asportuniverse;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -25,7 +26,15 @@ public class MainActivity extends Activity {
         soccer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Loading Soccer Updates", Toast.LENGTH_SHORT).show();
+               final Toast toast = Toast.makeText(getApplicationContext(), "Loading Soccer Updates", Toast.LENGTH_SHORT);
+                toast.show();
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        toast.cancel();
+                    }
+                }, 300);
                 Intent myIntent = new Intent(MainActivity.this, SoccerRss.class);
                 startActivity(myIntent);
             }
@@ -33,7 +42,15 @@ public class MainActivity extends Activity {
         ufc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Loading UFC Updates", Toast.LENGTH_SHORT).show();
+                final Toast toast = Toast.makeText(getApplicationContext(), "Loading UFC Updates", Toast.LENGTH_SHORT);
+                toast.show();
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        toast.cancel();
+                    }
+                }, 300);
                 Intent myIntent = new Intent(MainActivity.this, UFCrss.class);
                 startActivity(myIntent);
 
@@ -42,7 +59,15 @@ public class MainActivity extends Activity {
         rugby.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Loading Rugby Updates", Toast.LENGTH_SHORT).show();
+                final Toast toast = Toast.makeText(getApplicationContext(), "Loading Rugby Updates", Toast.LENGTH_SHORT);
+                toast.show();
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        toast.cancel();
+                    }
+                }, 300);
                 Intent myIntent = new Intent(MainActivity.this, RugbyRss.class);
                 startActivity(myIntent);
             }
