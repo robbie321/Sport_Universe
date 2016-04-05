@@ -10,4 +10,9 @@
     <string name="rugbyRss">This is the Rugby RSS feed</string>
     <string name="ufcRss">This is the UFC RSS feed</string>
     <string name="soccerRss">This is the Soccer RSS feed</string>
+    <string name="imageSoccer">Soccer</string>
+    <string name="imaggeRugby">Rugby</string>
+    <string name="soccerUpdate">Soccer Updates</string>
+    <string name="rugbyUpdates">Rugby Updates</string>
+    <string name="ufcUpdates">Ufc Updates</string>
 </resources>

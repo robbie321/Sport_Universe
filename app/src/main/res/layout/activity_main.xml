@@ -13,11 +13,12 @@
         android:background="@drawable/soccer"
         android:id="@+id/soccer_button"
         android:layout_below="@+id/textView2"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:cropToPadding="true"
+        android:contentDescription="@string/imageSoccer"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="144dp"
-        android:text="@string/ufc"
         android:background="@drawable/ufc"
         android:id="@+id/ufc_button"
         android:layout_above="@+id/ufc_textView"
@@ -45,7 +46,7 @@
     <TextView
         android:layout_width="130sp"
         android:layout_height="wrap_content"
-        android:text="Soccer Updates"
+        android:text="@string/soccerUpdate"
         android:id="@+id/soccer_textview"
         android:layout_below="@+id/soccer_button"
         android:layout_alignParentStart="true"
@@ -56,7 +57,7 @@
     <TextView
         android:layout_width="130sp"
         android:layout_height="wrap_content"
-        android:text="Rugby Updates"
+        android:text="@string/rugbyUpdates"
         android:id="@+id/rugby_textview"
         android:gravity="center"
         android:textStyle="bold"
@@ -67,7 +68,7 @@
     <TextView
         android:layout_width="130sp"
         android:layout_height="wrap_content"
-        android:text="UFC Updates"
+        android:text="@string/ufcUpdates"
         android:id="@+id/ufc_textView"
         android:gravity="center"
         android:textStyle="bold"
