@@ -5,11 +5,13 @@
     android:weightSum="1" android:background="@drawable/blue">
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="46dp"
         android:layout_height="wrap_content"
-        android:text="@string/home"
         android:id="@+id/button_home"
-        android:layout_gravity="end" />
+        android:background="@drawable/backbutton"
+        android:singleLine="true"
+        android:backgroundTint="#ffffffff"
+        android:layout_gravity="right" />
 
     <TextView
         android:layout_width="174dp"
