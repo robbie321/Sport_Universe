@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/aaolympic"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
@@ -16,12 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SoccerRss">
+        <activity android:name=".SoccerRss" android:label="@string/soccerUpdate">
         </activity>
-        <activity android:name=".RugbyRss">
+        <activity android:name=".RugbyRss" android:label="@string/rugbyUpdates">
         </activity>
-        <activity android:name=".UFCrss">
+        <activity android:name=".UFCrss" android:label="@string/ufcUpdates">
         </activity>
     </application>
-
 </manifest>
