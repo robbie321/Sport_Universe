@@ -19,12 +19,12 @@ public class MainActivity extends Activity {
         ImageButton soccer = (ImageButton) findViewById(R.id.soccer_button);
         Button ufc = (Button) findViewById(R.id.ufc_button);
         ImageButton rugby = (ImageButton) findViewById(R.id.rugby_button);
-
+        Button settings = (Button) findViewById((R.id.action_settings));
 
         soccer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Loading Soccer data", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Loading Soccer Updates", Toast.LENGTH_SHORT).show();
                 Intent myIntent = new Intent(MainActivity.this, SoccerRss.class);
                 startActivity(myIntent);
             }
@@ -32,7 +32,7 @@ public class MainActivity extends Activity {
         ufc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Loading UFC data", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Loading UFC Updates", Toast.LENGTH_SHORT).show();
                 Intent myIntent = new Intent(MainActivity.this, UFCrss.class);
                 startActivity(myIntent);
 
@@ -41,7 +41,7 @@ public class MainActivity extends Activity {
         rugby.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Loading Rugby data", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Loading Rugby Updates", Toast.LENGTH_SHORT).show();
                 Intent myIntent = new Intent(MainActivity.this, RugbyRss.class);
                 startActivity(myIntent);
             }
