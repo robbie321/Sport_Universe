@@ -2,21 +2,18 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="1" android:background="@drawable/blue">
+    android:weightSum="1" android:background="@drawable/testback">
 
     <Button
         android:layout_width="46dp"
         android:layout_height="wrap_content"
         android:id="@+id/button_home"
-        android:layout_gravity="end"
         android:background="@drawable/backbutton"
         android:backgroundTint="#ffffffff" />
 
-    <TextView
-        android:layout_width="174dp"
+    <ListView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/ufcRss"
-        android:id="@+id/textView"
-        android:textColor="#ffffffff"/>
+        android:id="@+id/listView3" />
 
 </LinearLayout>
