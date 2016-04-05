@@ -12,16 +12,16 @@
         android:text="@string/soccer"
         android:background="@drawable/soccer"
         android:id="@+id/soccer_button"
-        android:layout_below="@+id/textView2"
-        android:layout_alignParentStart="true"
         android:cropToPadding="true"
-        android:contentDescription="@string/imageSoccer"/>
+        android:contentDescription="@string/imageSoccer"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="144dp"
         android:background="@drawable/ufc"
         android:id="@+id/ufc_button"
-        android:layout_above="@+id/ufc_textView"
+        android:layout_below="@+id/rugby_textview"
         android:layout_alignParentStart="true" />
     <ImageButton
         android:layout_width="match_parent"
@@ -29,30 +29,22 @@
         android:background="@drawable/rugby"
         android:id="@+id/rugby_button"
         android:contentDescription="@string/rugby"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/soccer_textview"
-        android:layout_above="@+id/rugby_textview" />
+        android:layout_alignParentStart="true"
+        android:clickable="false"
+        android:cropToPadding="false" />
 
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/sports_universe"
-        android:id="@+id/textView2"
-        android:shadowColor="#ffffff"
-        android:textAlignment="center"
-        android:textStyle="bold|italic"
-        android:textColor="#ffffff" />
 
     <TextView
         android:layout_width="130sp"
         android:layout_height="wrap_content"
         android:text="@string/soccerUpdate"
         android:id="@+id/soccer_textview"
-        android:layout_below="@+id/soccer_button"
-        android:layout_alignParentStart="true"
         android:gravity="center"
         android:textStyle="bold"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:layout_below="@+id/soccer_button"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="130sp"
@@ -62,7 +54,7 @@
         android:gravity="center"
         android:textStyle="bold"
         android:textColor="#ffffff"
-        android:layout_above="@+id/ufc_button"
+        android:layout_below="@+id/rugby_button"
         android:layout_alignParentStart="true" />
 
     <TextView
@@ -73,7 +65,7 @@
         android:gravity="center"
         android:textStyle="bold"
         android:textColor="#ffffff"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/ufc_button"
         android:layout_alignParentStart="true" />
 
 </RelativeLayout>
