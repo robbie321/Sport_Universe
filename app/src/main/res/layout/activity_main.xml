@@ -7,7 +7,14 @@
     tools:context="com.example.g13149881.asportuniverse.MainActivity">
 
 
-
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/soccer_button"
+        android:layout_above="@+id/rugby_button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="71dp"
+        android:background="#00000000" />
 
 
 
@@ -28,13 +35,6 @@
         android:layout_below="@+id/rugby_button"
         android:layout_alignParentEnd="true" />
 
-    <Button
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/soccer_button"
-        android:layout_above="@+id/rugby_button"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="71dp"
-        android:background="#00000000" />
+
 
 </RelativeLayout>
