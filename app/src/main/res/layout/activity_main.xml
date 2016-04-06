@@ -3,68 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/testback"
+    android:background="@drawable/backgroundimage"
     tools:context="com.example.g13149881.asportuniverse.MainActivity">
 
-    <ImageButton
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:text="@string/soccer"
-        android:background="@drawable/afooty"
-        android:id="@+id/soccer_button"
-        android:contentDescription="@string/imageSoccer"
-        android:layout_above="@+id/soccer_textview"
-        android:layout_centerHorizontal="true" />
-    <Button
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="@drawable/aboxer"
-        android:id="@+id/ufc_button"
-        android:layout_below="@+id/rugby_textview"
-        android:layout_centerHorizontal="true" />
-
-    <ImageButton
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="@drawable/asport"
-        android:id="@+id/rugby_button"
-        android:contentDescription="@string/rugby"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
-
-
-    <TextView
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:text="@string/soccerUpdate"
-        android:id="@+id/soccer_textview"
-        android:gravity="center"
-        android:textStyle="bold"
-        android:textColor="#ffffff"
-        android:layout_above="@+id/rugby_button"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:text="@string/rugbyUpdates"
-        android:id="@+id/rugby_textview"
-        android:gravity="center"
-        android:textStyle="bold"
-        android:textColor="#ffffff"
-        android:layout_below="@+id/rugby_button"
-        android:layout_alignStart="@+id/soccer_textview" />
-
-    <TextView
-        android:layout_width="130sp"
-        android:layout_height="wrap_content"
-        android:text="@string/ufcUpdates"
-        android:id="@+id/ufc_textView"
-        android:gravity="center"
-        android:textStyle="bold"
-        android:textColor="#ffffff"
-        android:layout_below="@+id/ufc_button"
-        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="30dp"
@@ -84,5 +25,31 @@
         android:textColor="#ffffffff"
         android:layout_below="@+id/button"
         android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/soccer_button"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="47dp"
+        android:background="#00000000" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/rugby_button"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:background="#00000000" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ufc_button"
+        android:layout_below="@+id/rugby_button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="59dp"
+        android:background="#00000000" />
 
 </RelativeLayout>

@@ -18,9 +18,9 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ImageButton soccer = (ImageButton) findViewById(R.id.soccer_button);
+        Button soccer = (Button) findViewById(R.id.soccer_button);
         Button ufc = (Button) findViewById(R.id.ufc_button);
-        ImageButton rugby = (ImageButton) findViewById(R.id.rugby_button);
+        Button rugby = (Button) findViewById(R.id.rugby_button);
         Button settings = (Button) findViewById((R.id.action_settings));
 
         soccer.setOnClickListener(new View.OnClickListener() {
