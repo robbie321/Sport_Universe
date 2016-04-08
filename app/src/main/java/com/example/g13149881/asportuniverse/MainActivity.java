@@ -20,7 +20,6 @@ public class MainActivity extends Activity {
         Button soccer = (Button) findViewById(R.id.soccer_button);
         Button ufc = (Button) findViewById(R.id.ufc_button);
         Button rugby = (Button) findViewById(R.id.rugby_button);
-        Button settings = (Button) findViewById((R.id.action_settings));
 
         soccer.setOnClickListener(new View.OnClickListener() {
             @Override
