@@ -14,7 +14,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.default" />
             </intent-filter>
         </activity>
         <activity android:name=".SoccerRss" android:label="@string/soccerUpdate">
@@ -22,6 +22,13 @@
         <activity android:name=".RugbyRss" android:label="@string/rugbyUpdates">
         </activity>
         <activity android:name=".UFCrss" android:label="@string/ufcUpdates">
+        </activity>
+        <activity   android:name=".Splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 </manifest>
