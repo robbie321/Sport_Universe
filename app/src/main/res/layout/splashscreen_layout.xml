@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/logo"
+    android:background="#000000"
     tools:context="com.example.g13149881.asportuniverse.Splashscreen">
 
 
@@ -13,8 +13,8 @@
         android:id="@+id/imageView"
         android:background="@drawable/afooty"
         android:layout_marginLeft="20dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>

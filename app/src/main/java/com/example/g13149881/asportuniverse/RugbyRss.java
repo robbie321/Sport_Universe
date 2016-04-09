@@ -19,15 +19,29 @@ public class RugbyRss extends Activity{
 
 
         Button home = (Button) findViewById(R.id.button_home);
+        Button soccer = (Button) findViewById(R.id.soccer_button);
+        Button ufc = (Button) findViewById(R.id.ufc_button);
 
 
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent myIntent = new Intent(RugbyRss.this, MainActivity.class);
-                RugbyRss.this.startActivity(myIntent);
-
-
+                startActivity(myIntent);
+            }
+        });
+        soccer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(RugbyRss.this, SoccerRss.class);
+                startActivity(myIntent);
+            }
+        });
+        ufc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(RugbyRss.this, UFCrss.class);
+                startActivity(myIntent);
             }
         });
     }
