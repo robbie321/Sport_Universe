@@ -8,8 +8,7 @@
         android:layout_width="46dp"
         android:layout_height="wrap_content"
         android:id="@+id/button_home"
-        android:background="@drawable/backbutton"
-        android:backgroundTint="#ffffffff" />
+        android:background="@drawable/backbutton" />
 
     <ListView
         android:layout_width="match_parent"
@@ -22,7 +21,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/soccer_button"
         android:background="@drawable/afooty"
-        android:backgroundTint="#ffffffff"
         android:layout_alignParentTop="true"
         android:layout_toEndOf="@+id/button_home"
         android:layout_marginStart="23dp"
@@ -33,7 +31,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/ufc_button"
         android:background="@drawable/aboxer"
-        android:backgroundTint="#ffffffff"
         android:layout_marginStart="21dp"
         android:layout_alignParentTop="true"
         android:layout_toEndOf="@+id/soccer_button"
