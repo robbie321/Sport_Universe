@@ -18,6 +18,7 @@ public class MainActivity extends Activity {
         Button Exercise = (Button) findViewById(R.id.exercise_button);
         Button Nutrition = (Button) findViewById(R.id.nutrition_button);
         Button Cardio = (Button) findViewById(R.id.cardio_button);
+        Button Stopwatch = (Button) findViewById(R.id.stopwatch);
 
         Exercise.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,7 +48,7 @@ public class MainActivity extends Activity {
                         toast.cancel();
                     }
                 }, 300);
-                Intent myIntent = new Intent(MainActivity.this, com.example.g13149881.asportuniverse.Nutrition.class);
+                Intent myIntent = new Intent(MainActivity.this, Nutrition.class);
                 startActivity(myIntent);
 
             }
@@ -64,7 +65,14 @@ public class MainActivity extends Activity {
                         toast.cancel();
                     }
                 }, 300);
-                Intent myIntent = new Intent(MainActivity.this, com.example.g13149881.asportuniverse.Cardio.class);
+                Intent myIntent = new Intent(MainActivity.this, Cardio.class);
+                startActivity(myIntent);
+            }
+        });
+        Stopwatch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(MainActivity.this, StopWatch.class);
                 startActivity(myIntent);
             }
         });

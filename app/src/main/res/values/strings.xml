@@ -6,4 +6,5 @@
     <string name="exercise">Weight Lifting Exercises</string>
     <string name="cardio">Cardio Exercises</string>
     <string name="nutrition">Nutrition Plans</string>
+    <string name="stopwatch">Timer</string>
 </resources>

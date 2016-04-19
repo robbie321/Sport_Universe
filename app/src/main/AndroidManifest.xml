@@ -24,6 +24,8 @@
         </activity>
         <activity android:name=".Nutrition" android:label="@string/nutrition">
         </activity>
+        <activity android:name=".StopWatch" android:label="@string/stopwatch">
+        </activity>
         <activity   android:name=".Splashscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
