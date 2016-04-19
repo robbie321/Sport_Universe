@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:weightSum="1">
 
 
     <Button
@@ -8,26 +9,37 @@
         android:layout_height="wrap_content"
         android:text="Start"
         android:id="@+id/start"
-    />
+        android:layout_gravity="center_vertical"
+        android:layout_alignTop="@+id/stop"
+        android:layout_alignParentStart="true" />
+
+    <Chronometer
+        android:layout_width="159dp"
+        android:layout_height="48dp"
+        android:id="@+id/chronometer"
+        android:layout_weight="0.20"
+        android:layout_marginBottom="160dp"
+        android:layout_above="@+id/stop"
+        android:layout_alignStart="@+id/stop" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Stop"
         android:id="@+id/stop"
-    />
-
-    <Chronometer
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/chronometer"
-        android:layout_gravity="center_vertical" />
+        android:layout_gravity="center_vertical"
+        android:layout_alignTop="@+id/reset"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Reset"
         android:id="@+id/reset"
-    />
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="55dp" />
 
-</LinearLayout>
+</RelativeLayout>

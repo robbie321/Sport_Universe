@@ -26,6 +26,8 @@
         </activity>
         <activity android:name=".StopWatch" android:label="@string/stopwatch">
         </activity>
+        <activity android:name=".BmiCalculator" android:label="@string/bmi">
+        </activity>
         <activity   android:name=".Splashscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

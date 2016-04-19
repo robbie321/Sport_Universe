@@ -19,6 +19,7 @@ public class MainActivity extends Activity {
         Button Nutrition = (Button) findViewById(R.id.nutrition_button);
         Button Cardio = (Button) findViewById(R.id.cardio_button);
         Button Stopwatch = (Button) findViewById(R.id.stopwatch);
+        Button BMI = (Button) findViewById(R.id.bmi_button);
 
         Exercise.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,6 +74,13 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Intent myIntent = new Intent(MainActivity.this, StopWatch.class);
+                startActivity(myIntent);
+            }
+        });
+        BMI.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(MainActivity.this, BmiCalculator.class);
                 startActivity(myIntent);
             }
         });
