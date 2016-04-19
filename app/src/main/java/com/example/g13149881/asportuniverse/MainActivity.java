@@ -4,8 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -17,14 +15,14 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button soccer = (Button) findViewById(R.id.soccer_button);
-        Button ufc = (Button) findViewById(R.id.ufc_button);
-        Button rugby = (Button) findViewById(R.id.rugby_button);
+        Button Exercise = (Button) findViewById(R.id.exercise_button);
+        Button Nutrition = (Button) findViewById(R.id.nutrition_button);
+        Button Cardio = (Button) findViewById(R.id.cardio_button);
 
-        soccer.setOnClickListener(new View.OnClickListener() {
+        Exercise.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               final Toast toast = Toast.makeText(getApplicationContext(), "Loading Soccer Updates", Toast.LENGTH_SHORT);
+                final Toast toast = Toast.makeText(getApplicationContext(), "Opening Exercises", Toast.LENGTH_SHORT);
                 toast.show();
                 Handler handler = new Handler();
                 handler.postDelayed(new Runnable() {
@@ -33,11 +31,11 @@ public class MainActivity extends Activity {
                         toast.cancel();
                     }
                 }, 300);
-                Intent myIntent = new Intent(MainActivity.this, SoccerRss.class);
+                Intent myIntent = new Intent(MainActivity.this, Exercise.class);
                 startActivity(myIntent);
             }
         });
-        ufc.setOnClickListener(new View.OnClickListener() {
+        Nutrition.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 final Toast toast = Toast.makeText(getApplicationContext(), "Loading UFC Updates", Toast.LENGTH_SHORT);
@@ -49,12 +47,12 @@ public class MainActivity extends Activity {
                         toast.cancel();
                     }
                 }, 300);
-                Intent myIntent = new Intent(MainActivity.this, UFCrss.class);
+                Intent myIntent = new Intent(MainActivity.this, com.example.g13149881.asportuniverse.Nutrition.class);
                 startActivity(myIntent);
 
             }
         });
-        rugby.setOnClickListener(new View.OnClickListener() {
+        Cardio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 final Toast toast = Toast.makeText(getApplicationContext(), "Loading Rugby Updates", Toast.LENGTH_SHORT);
@@ -66,7 +64,7 @@ public class MainActivity extends Activity {
                         toast.cancel();
                     }
                 }, 300);
-                Intent myIntent = new Intent(MainActivity.this, RugbyRss.class);
+                Intent myIntent = new Intent(MainActivity.this, com.example.g13149881.asportuniverse.Cardio.class);
                 startActivity(myIntent);
             }
         });

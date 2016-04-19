@@ -19,7 +19,7 @@
     <Button
         android:layout_width="46dp"
         android:layout_height="wrap_content"
-        android:id="@+id/ufc_button"
+        android:id="@+id/nutrition_button"
         android:background="@drawable/aboxer"
         android:layout_alignParentTop="true"
         android:layout_toEndOf="@+id/button_home"
@@ -29,11 +29,11 @@
     <Button
         android:layout_width="46dp"
         android:layout_height="wrap_content"
-        android:id="@+id/rugby_button"
+        android:id="@+id/cardio_button"
         android:background="@drawable/asport"
         android:layout_marginStart="21dp"
         android:layout_alignParentTop="true"
-        android:layout_toEndOf="@+id/ufc_button"
+        android:layout_toEndOf="@+id/nutrition_button"
         android:layout_above="@+id/listView2" />
 
 </RelativeLayout>

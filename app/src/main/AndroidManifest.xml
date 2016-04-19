@@ -18,11 +18,11 @@
                 <category android:name="android.intent.category.default" />
             </intent-filter>
         </activity>
-        <activity android:name=".SoccerRss" android:label="@string/soccerUpdate">
+        <activity android:name=".Exercise" android:label="@string/exercise">
         </activity>
-        <activity android:name=".RugbyRss" android:label="@string/rugbyUpdates">
+        <activity android:name=".Cardio" android:label="@string/cardio">
         </activity>
-        <activity android:name=".UFCrss" android:label="@string/ufcUpdates">
+        <activity android:name=".Nutrition" android:label="@string/nutrition">
         </activity>
         <activity   android:name=".Splashscreen">
             <intent-filter>

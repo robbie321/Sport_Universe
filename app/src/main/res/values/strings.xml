@@ -1,18 +1,9 @@
 <resources>
     <string name="app_name">Sports Universe</string>
     <string name="sports_universe">Sports Universe</string>
-    <string name="soccer">SOCCER</string>
-    <string name="ufc">UFC</string>
-    <string name="tennis">TENNIS</string>
-    <string name="rugby">Rugby</string>
     <string name="action_settings">Settings</string>
     <string name="home">Home</string>
-    <string name="rugbyRss">This is the Rugby RSS feed</string>
-    <string name="ufcRss">This is the UFC RSS feed</string>
-    <string name="soccerRss">This is the Soccer RSS feed</string>
-    <string name="imageSoccer">Soccer</string>
-    <string name="imaggeRugby">Rugby</string>
-    <string name="soccerUpdate">Soccer Updates</string>
-    <string name="rugbyUpdates">Rugby Updates</string>
-    <string name="ufcUpdates">Ufc Updates</string>
+    <string name="exercise">Weight Lifting Exercises</string>
+    <string name="cardio">Cardio Exercises</string>
+    <string name="nutrition">Nutrition Plans</string>
 </resources>
