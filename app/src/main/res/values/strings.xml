@@ -8,5 +8,11 @@
     <string name="nutrition">Nutrition Plans</string>
     <string name="stopwatch">Timer</string>
     <string name="bmi">Body Mass Index Test</string>
+    <string name="legs">Legs</string>
+    <string name="abs">Abs</string>
+    <string name="chest">Chest</string>
+    <string name="back">Back</string>
+    <string name="shoulder">Shoulder</string>
+    <string name="arms">Arms</string>
 
 </resources>

@@ -1,57 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal" android:layout_width="match_parent"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="1" android:background="@drawable/background3">
-
-
-    <LinearLayout
-        android:orientation="vertical"
+    android:background="@drawable/background">
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true">
+        android:layout_height="wrap_content">
 
         <Button
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Chest"
-            android:id="@+id/chest_button" />
+            android:layout_width="360dp"
+            android:layout_height="100dp"
+            android:text="@string/legs"
+            android:id="@+id/legs_button"
+            />
 
         <Button
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Back"
-            android:id="@+id/back_button" />
+
+            android:layout_width="360dp"
+            android:layout_height="100dp"
+            android:text="@string/abs"
+            android:id="@+id/abs_button"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false"
+            android:layout_below="@+id/legs_button"/>
+        <Button
+            android:layout_width="360dp"
+            android:layout_height="100dp"
+            android:text="@string/chest"
+            android:id="@+id/chest_button"
+            android:layout_below="@+id/abs_button" />
 
         <Button
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/shoulders_button" />
+            android:layout_width="360dp"
+            android:layout_height="100dp"
+            android:text="@string/back"
+            android:id="@+id/back_button"
+            android:layout_below="@+id/chest_button"/>
 
         <Button
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Arms"
-            android:id="@+id/arms_button" />
+            android:layout_width="360dp"
+            android:layout_height="100dp"
+            android:text="@string/shoulder"
+            android:id="@+id/shoulders_button"
+            android:layout_below="@+id/back_button" />
 
         <Button
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Legs"
-            android:id="@+id/legs_button" />
-
-        <Button
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Abs"
-            android:id="@+id/abs_button" />
-    </LinearLayout>
-</RelativeLayout>
+            android:layout_width="360dp"
+            android:layout_height="100dp"
+            android:text="@string/arms"
+            android:id="@+id/arms_button"
+            android:background="@drawable/arms"
+            android:layout_below="@+id/shoulders_button"
+            android:textColor="#00000000" />
+    </RelativeLayout>
+</ScrollView>
