@@ -32,7 +32,7 @@ public class Cardio extends Activity{
         soccer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(Cardio.this, Exercise.class);
+                Intent myIntent = new Intent(Cardio.this, com.example.g13149881.asportuniverse.Exercise.class);
                 startActivity(myIntent);
             }
         });

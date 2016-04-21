@@ -29,16 +29,20 @@ public class BmiCalculator extends Activity {
             public void onClick(View v) {
 
 
-                double w,h,bmi;
-                w = Double.parseDouble(weight.getText().toString());
-                h = Double.parseDouble(height.getText().toString());
+                 double w,h,bmi;
+
                 String message = "";
                 if(weight.getText().toString().equals("") || height.getText().toString().equals("")){
                     Toast toast = Toast.makeText(getApplicationContext(), "Error: Invalid Input", Toast.LENGTH_SHORT);
+                    toast.show();
                 }
                 else {
-                    bmi = h*h;
+                    w = Double.parseDouble(weight.getText().toString());
+                    h = Double.parseDouble(height.getText().toString());
+
+                    bmi = h * h;
                     bmi = w/bmi;
+
                     result.setText(String.valueOf(bmi));
                     if (bmi < 18.5) {
                         message = "Underweight";
