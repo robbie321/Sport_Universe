@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Exercise" android:label="@string/exercise">
-        </activity>
+    </activity>
         <activity android:name=".Cardio" android:label="@string/cardio">
         </activity>
         <activity android:name=".Nutrition" android:label="@string/nutrition">
@@ -27,6 +27,18 @@
         <activity android:name=".StopWatch" android:label="@string/stopwatch">
         </activity>
         <activity android:name=".BmiCalculator" android:label="@string/bmi">
+        </activity>
+        <activity android:name=".Chest_main" android:label="@string/exercise">
+        </activity>
+        <activity android:name=".Back_main" android:label="@string/exercise">
+        </activity>
+        <activity android:name=".Shoulders_main" android:label="@string/exercise">
+        </activity>
+        <activity android:name=".Arms_main" android:label="@string/exercise">
+        </activity>
+        <activity android:name=".Legs_main" android:label="@string/exercise">
+        </activity>
+        <activity android:name=".Abs_main" android:label="@string/exercise">
         </activity>
         <activity   android:name=".Splashscreen">
             <intent-filter>
