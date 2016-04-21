@@ -11,8 +11,9 @@
             android:layout_width="360dp"
             android:layout_height="100dp"
             android:text="@string/legs"
+            android:background="@drawable/legs"
             android:id="@+id/legs_button"
-            />
+            android:textColor="#00000000" />
 
         <Button
 
@@ -20,36 +21,44 @@
             android:layout_height="100dp"
             android:text="@string/abs"
             android:id="@+id/abs_button"
+            android:background="@drawable/abs"
             android:layout_alignParentEnd="false"
             android:layout_alignParentStart="false"
-            android:layout_below="@+id/legs_button"/>
+            android:layout_below="@+id/legs_button"
+            android:textColor="#00000000" />
         <Button
             android:layout_width="360dp"
             android:layout_height="100dp"
             android:text="@string/chest"
             android:id="@+id/chest_button"
-            android:layout_below="@+id/abs_button" />
+            android:background="@drawable/chest"
+            android:layout_below="@+id/abs_button"
+            android:textColor="#00000000" />
 
         <Button
             android:layout_width="360dp"
             android:layout_height="100dp"
             android:text="@string/back"
             android:id="@+id/back_button"
-            android:layout_below="@+id/chest_button"/>
+            android:background="@drawable/back"
+            android:layout_below="@+id/chest_button"
+            android:textColor="#00000000" />
 
         <Button
             android:layout_width="360dp"
             android:layout_height="100dp"
             android:text="@string/shoulder"
             android:id="@+id/shoulders_button"
-            android:layout_below="@+id/back_button" />
+            android:background="@drawable/shoulder"
+            android:layout_below="@+id/back_button"
+            android:textColor="#00000000" />
 
         <Button
             android:layout_width="360dp"
             android:layout_height="100dp"
             android:text="@string/arms"
             android:id="@+id/arms_button"
-            android:background="@drawable/arms"
+            android:background="@drawable/arms1"
             android:layout_below="@+id/shoulders_button"
             android:textColor="#00000000" />
     </RelativeLayout>

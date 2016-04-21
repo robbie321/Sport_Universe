@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
     tools:context="com.example.g13149881.asportuniverse.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
 
     <Button
         android:layout_width="400dp"
         android:layout_height="100dp"
         android:id="@+id/exercise_button"
-        android:background="#00000000"
+        android:background="@drawable/exercises"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:text="EXERCISES" />
+        android:text="EXERCISES"
+        android:textColor="#00000000"/>
 
 
 
@@ -22,26 +26,28 @@
         android:layout_width="400dp"
         android:layout_height="100dp"
         android:id="@+id/nutrition_button"
-        android:background="#00000000"
+        android:background="@drawable/aan"
         android:layout_below="@+id/exercise_button"
         android:layout_alignStart="@+id/exercise_button"
-        android:text="NUTRITION" />
+        android:text="NUTRITION"
+        android:textColor="#00000000"/>
 
     <Button
         android:layout_width="400dp"
         android:layout_height="100dp"
         android:id="@+id/cardio_button"
-        android:background="#00000000"
+        android:background="@drawable/cardio"
         android:layout_below="@+id/nutrition_button"
         android:layout_centerHorizontal="true"
-        android:text="CARDIO" />
+        android:text="CARDIO"
+        android:textColor="#00000000"/>
     <Button
         android:layout_width="400dp"
         android:layout_height="100dp"
         android:id="@+id/stopwatch"
         android:text="Stopwatch"
-        android:background="#00000000"
-        android:textColor="#999999"
+        android:background="@drawable/aastop"
+        android:textColor="#00000000"
         android:layout_below="@+id/bmi_button"
         android:layout_alignStart="@+id/cardio_button" />
 
@@ -51,9 +57,10 @@
         android:layout_height="100dp"
         android:text="BMI"
         android:id="@+id/bmi_button"
-        android:background="#00000000"
+        android:background="@drawable/bmi"
+        android:textColor="#00000000"
         android:layout_below="@+id/cardio_button"
         android:layout_centerHorizontal="true" />
+    </RelativeLayout>
 
-
-</RelativeLayout>
+</ScrollView>

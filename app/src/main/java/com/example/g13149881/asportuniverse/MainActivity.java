@@ -40,7 +40,7 @@ public class MainActivity extends Activity {
         Nutrition.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Toast toast = Toast.makeText(getApplicationContext(), "Loading UFC Updates", Toast.LENGTH_SHORT);
+                final Toast toast = Toast.makeText(getApplicationContext(), "Opening Nutrition", Toast.LENGTH_SHORT);
                 toast.show();
                 Handler handler = new Handler();
                 handler.postDelayed(new Runnable() {
@@ -57,7 +57,7 @@ public class MainActivity extends Activity {
         Cardio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Toast toast = Toast.makeText(getApplicationContext(), "Loading Rugby Updates", Toast.LENGTH_SHORT);
+                final Toast toast = Toast.makeText(getApplicationContext(), "Opening Cardio", Toast.LENGTH_SHORT);
                 toast.show();
                 Handler handler = new Handler();
                 handler.postDelayed(new Runnable() {
@@ -73,6 +73,15 @@ public class MainActivity extends Activity {
         Stopwatch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                final Toast toast = Toast.makeText(getApplicationContext(), "Opening Stopwatch", Toast.LENGTH_SHORT);
+                toast.show();
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        toast.cancel();
+                    }
+                }, 300);
                 Intent myIntent = new Intent(MainActivity.this, StopWatch.class);
                 startActivity(myIntent);
             }
@@ -80,6 +89,15 @@ public class MainActivity extends Activity {
         BMI.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                final Toast toast = Toast.makeText(getApplicationContext(), "Opening BMI Calculator", Toast.LENGTH_SHORT);
+                toast.show();
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        toast.cancel();
+                    }
+                }, 300);
                 Intent myIntent = new Intent(MainActivity.this, BmiCalculator.class);
                 startActivity(myIntent);
             }
