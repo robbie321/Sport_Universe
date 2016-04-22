@@ -65,7 +65,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="134dp"
-        android:textColor="#fffffcf9" />
+        android:textColor="#ff5eff00" />
 
     <TextView
         android:layout_width="wrap_content"
