@@ -28,17 +28,17 @@
         </activity>
         <activity android:name=".BmiCalculator" android:label="@string/bmi">
         </activity>
-        <activity android:name=".Chest_main" android:label="@string/exercise">
+        <activity android:name=".Chest_main" android:label="@string/chest">
         </activity>
-        <activity android:name=".Back_main" android:label="@string/exercise">
+        <activity android:name=".Back_main" android:label="@string/back">
         </activity>
-        <activity android:name=".Shoulders_main" android:label="@string/exercise">
+        <activity android:name=".Shoulders_main" android:label="@string/shoulder">
         </activity>
-        <activity android:name=".Arms_main" android:label="@string/exercise">
+        <activity android:name=".Arms_main" android:label="@string/arms">
         </activity>
-        <activity android:name=".Legs_main" android:label="@string/exercise">
+        <activity android:name=".Legs_main" android:label="@string/legs">
         </activity>
-        <activity android:name=".Abs_main" android:label="@string/exercise">
+        <activity android:name=".Abs_main" android:label="@string/abs">
         </activity>
         <activity   android:name=".Splashscreen">
             <intent-filter>
