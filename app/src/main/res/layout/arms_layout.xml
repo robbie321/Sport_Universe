@@ -65,7 +65,7 @@
             android:layout_height="360dp"
             android:id="@+id/imageView5"
             android:src="@drawable/inclineskullcrusher"
-            android:layout_below="@id/textView1"
+            android:layout_below="@id/textView2"
             android:layout_centerHorizontal="true"
             android:contentDescription="@string/arms"/>
 
@@ -75,7 +75,7 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="INCLINE SKULL CRUSHER\nSet a bench to a 30-degree angle. Extend your arms overhead with palms facing each other and then bend your elbows and lower the weights behind your head. Take three seconds to lower the weight. Increase the weight each set for the first three sets. Then back off but use a heavier load than you did for your first set of nine reps, and continue increasing the weight."
             android:id="@+id/textView3"
-            android:layout_below="@id/imageView4"
+            android:layout_below="@id/imageView5"
             android:layout_alignParentEnd="true" />
     </RelativeLayout>
 
