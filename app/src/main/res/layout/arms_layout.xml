@@ -36,7 +36,7 @@
             android:layout_width="360dp"
             android:layout_height="match_parent"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="                                    DIPS\nUse dip bars if available, or place your palms on a bench, chair  or floor and extend legs in front of you. Lower your body until your upper arms are parallel to the floor, but no lower. Extend your elbows to come up. "
+            android:text="                                      DIPS\nUse dip bars if available, or place your palms on a bench, chair  or floor and extend legs in front of you. Lower your body until your upper arms are parallel to the floor, but no lower. Extend your elbows to come up. "
             android:id="@+id/textView1"
             android:textColor="#ff000000"
             android:layout_below="@+id/imageView3"
