@@ -1,6 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:background="@drawable/background">
 
-</LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="360dp"
+            android:layout_height="360dp"
+            android:id="@+id/imageView2"
+            android:src="@drawable/lateralplankwalk"
+            android:contentDescription="@string/shoulder"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="                  LATERAL PLANK WALK\nGet into pushup position and simultaneously move your left hand over your right while your right leg steps out wide. Now bring the right hand out and walk your left foot in to a normal pushup footing. That’s  one shuffle. Continue “walking” for 10 shuffles and then walk in the opposite direction to get back to the starting position. Keep your core braced and your hips level at all times."
+            android:id="@+id/textView"
+            android:textColor="#ff000000"
+            android:layout_below="@+id/imageView2"
+            android:layout_alignStart="@+id/imageView2" />
+
+        <ImageView
+            android:layout_width="360dp"
+            android:layout_height="360dp"
+            android:id="@+id/imageView3"
+            android:src="@drawable/standingdumbellfly"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/shoulder"/>
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="                  STANDING DUMBELL FLY\nHold a dumbbell in each hand by your sides. Without shrugging, use your upper body to swing the weights up a few inches. Your arms and torso will form an upside down V shape. Think of it as a lateral raise with momentum but without full range of motion."
+            android:id="@+id/textView1"
+            android:textColor="#ff000000"
+            android:layout_below="@+id/imageView3"
+            android:layout_alignStart="@+id/imageView2" />
+
+        <ImageView
+            android:layout_width="360dp"
+            android:layout_height="360dp"
+            android:id="@+id/imageView4"
+            android:src="@drawable/overheardpress"
+            android:layout_below="@id/textView1"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/arms"/>
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="                  OVERHEARD PRESS\nSet the bar up in a squat rack or cage, and grasp it just outside shoulder width. Take the bar off the rack and hold it at shoulder level with your forearms perpendicular to the floor. Squeeze the bar and brace your abs. Press the bar overhead, pushing your head forward and shrugging your traps as the bar passes your face."
+            android:id="@+id/textView2"
+            android:layout_below="@id/imageView4"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+
+</ScrollView>
