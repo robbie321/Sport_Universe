@@ -8,7 +8,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:layout_width="360dp"
+            android:layout_width="fill_parent"
             android:layout_height="100dp"
             android:text="@string/legs"
             android:background="@drawable/legs"
@@ -17,7 +17,7 @@
 
         <Button
 
-            android:layout_width="360dp"
+            android:layout_width="fill_parent"
             android:layout_height="100dp"
             android:text="@string/abs"
             android:id="@+id/abs_button"
@@ -27,7 +27,7 @@
             android:layout_below="@+id/legs_button"
             android:textColor="#00000000" />
         <Button
-            android:layout_width="360dp"
+            android:layout_width="fill_parent"
             android:layout_height="100dp"
             android:text="@string/chest"
             android:id="@+id/chest_button"
@@ -36,7 +36,7 @@
             android:textColor="#00000000" />
 
         <Button
-            android:layout_width="360dp"
+            android:layout_width="fill_parent"
             android:layout_height="100dp"
             android:text="@string/back"
             android:id="@+id/back_button"
@@ -45,7 +45,7 @@
             android:textColor="#00000000" />
 
         <Button
-            android:layout_width="360dp"
+            android:layout_width="fill_parent"
             android:layout_height="100dp"
             android:text="@string/shoulder"
             android:id="@+id/shoulders_button"
@@ -54,7 +54,7 @@
             android:textColor="#00000000" />
 
         <Button
-            android:layout_width="360dp"
+            android:layout_width="fill_parent"
             android:layout_height="100dp"
             android:text="@string/arms"
             android:id="@+id/arms_button"
