@@ -1,5 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/background">
 
-</LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="360dp"
+            android:id="@+id/imageView2"
+            android:src="@drawable/pullup"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="                WIDE GRIP PULL-UP PRESS\n1).Grasp a pull-up bar with a grip slightly wider than shoulder width, with your hands facing away from you (overhand grip). Begin by hanging straight down to the floor with your arms extended. Let your legs hang straight or you can bent them at the knees with your feet crossed at the ankle. Wide-Grip Pull-Ups
+            \n2).Use your back muscles and bend your elbows to pull the upper part of your chest up to the level of the bar (your chin is over the bar) and at the same time arch your torso slightly backwards. In other words, you have to pull yourself up by squeezing your shoulder blades together and contracting your lats until your chin passes the bar. Slowly lower yourself to the start position without allowing your body to sway."
+            android:id="@+id/textView"
+            android:textColor="#ff000000"
+            android:layout_below="@+id/imageView2"
+            android:layout_alignStart="@+id/imageView2" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="360dp"
+            android:id="@+id/imageView3"
+            android:src="@drawable/seatedrow"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/arms"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="                          ONE ARM ROWS   \n1).In this workout or exercise you need access to a low pulley row machine with a V-bar. To get into the starting position, first you sit down on the machine and place your feet on the front flat surface, platform or crossbar provided. Make sure that your knees are slightly bent and not locked.
+\n2).This is the starting position of the exercise. Grab the V-bar handles and with your arms extended pull back until your torso is at a angle 90-degree from your legs. You should be feeling a nice stretched on your lats as you hold the bar in front of you.
+\n3).Keeping the torso stationary, pull the handles back towards to your torso while keeping the arms close to it until you touch the your abdominals. Breathe out as you perform that movement.
+\n4).At that point you should be squeezing your back muscles hard. Hold that contraction for a second and slowly go back to the starting position of the exercise during breathing in."
+            android:id="@+id/textView1"
+            android:textColor="#ff000000"
+            android:layout_below="@+id/imageView3"
+            android:layout_alignStart="@+id/imageView2" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="360dp"
+            android:id="@+id/imageView4"
+            android:src="@drawable/onearmrow"
+            android:layout_below="@id/textView1"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/arms"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="                          ONE ARM ROWS   \n1).Choose a flat bench and place a dumbbell on each side of it.
+        \n2).Place the right leg on top of the end of the bench, bend your torso forward from the waist until your upper body is parallel to the floor, and place your right hand on the other end of the bench for support.
+        \n3).Use the left hand to pick up the dumbbell on the floor and hold the weight while keeping your lower back straight. The palm of the hand should be facing your torso. This will be your starting position.
+        \n4).Pull the resistance straight up to the side of your chest, keeping your upper arm close to your side and keeping the torso stationary. Breathe out as you perform this step. Tip: Concentrate on squeezing the back muscles once you reach the full contracted position. Also, make sure that the force is performed with the back muscles and not the arms. Finally, the upper torso should remain stationary and only the arms should move. The forearms should do no other work except for holding the dumbbell; therefore do not try to pull the dumbbell up using the forearms.
+        \n5).Lower the resistance straight down to the starting position. Breathe in as you perform this step.
+        \n6).Repeat the movement for the specified amount of repetitions.
+        \n7).Switch sides and repeat again with the other arm."
+        android:layout_below="@id/imageView4"
+            android:layout_alignParentEnd="false"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+
+</ScrollView>

@@ -12,4 +12,5 @@ public class Chest_main extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.chest_layout);
     }
+
 }
