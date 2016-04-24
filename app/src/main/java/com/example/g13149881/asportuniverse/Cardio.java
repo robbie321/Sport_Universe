@@ -19,13 +19,23 @@ public class Cardio extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.cardio_layout);
 
-        VideoView videoView =(VideoView)findViewById(R.id.videoView);
-        MediaController mediaController= new MediaController(this);
+        Button play = (Button) findViewById(R.id.play_button);
+
+        final VideoView videoView =(VideoView)findViewById(R.id.videoView);
+        final MediaController mediaController= new MediaController(this);
         mediaController.setAnchorView(videoView);
-        Uri uri= Uri.parse("rtsp://r7---sn-4g57kue6.googlevideo.com/Ck0LENy73wIaRAmk3cJBg-iaXhMYDSANFC3u0pRWMOCoAUIJbXYtZ29vZ2xlSARSBXdhdGNoYIaluaTkzciOVooBCzVxRjNraG5XcXdnDA==/D693A8E7577C3A29E60C292B42C9C87D7C25A565.762A63DC4CA0A028DA83256C6A79E5F160CBEDA3/yt6/1/video.3gp");
-        videoView.setMediaController(mediaController);
-        videoView.setVideoURI(uri);
-        videoView.requestFocus();
-        videoView.start();
+        final Uri uri= Uri.parse("http://videocdn.bodybuilding.com/video/mp4/70000/71762m.mp4");
+
+        play.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                videoView.setMediaController(mediaController);
+                videoView.setVideoURI(uri);
+                videoView.requestFocus();
+                videoView.start();
+            }
+        });
+
     }
 }

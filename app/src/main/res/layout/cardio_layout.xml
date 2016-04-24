@@ -10,54 +10,13 @@
             android:id="@+id/videoView"
             android:layout_width="360dp"
             android:layout_height="360dp"
-            android:layout_above="@+id/textView"
              />
-
-        <TextView
-            android:layout_width="360dp"
-            android:layout_height="match_parent"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="                  Exercise Bike\n  "
-            android:id="@+id/textView"
-            android:textColor="#ff000000"
-            android:layout_below="@+id/imageView2"
-            android:layout_alignStart="@+id/imageView2" />
-
-        <ImageView
-            android:layout_width="360dp"
-            android:layout_height="360dp"
-            android:id="@+id/imageView3"
-            android:src="@drawable/dips"
-            android:layout_below="@+id/textView"
-            android:layout_alignParentEnd="true"
-            android:contentDescription="@string/arms"/>
-        <TextView
-            android:layout_width="360dp"
-            android:layout_height="match_parent"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="                                      DIPS\nUse dip bars if available, or place your palms on a bench, chair  or floor and extend legs in front of you. Lower your body until your upper arms are parallel to the floor, but no lower. Extend your elbows to come up. "
-            android:id="@+id/textView1"
-            android:textColor="#ff000000"
-            android:layout_below="@+id/imageView3"
-            android:layout_alignStart="@+id/imageView2" />
-
-        <ImageView
-            android:layout_width="360dp"
-            android:layout_height="360dp"
-            android:id="@+id/imageView4"
-            android:src="@drawable/dpushup"
-            android:layout_below="@id/textView1"
-            android:layout_centerHorizontal="true"
-            android:contentDescription="@string/arms"/>
-
-        <TextView
-            android:layout_width="360dp"
-            android:layout_height="match_parent"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="                        DIAMOND PUSHUP\nGet into pushup position but place your hands close together so your thumbs and index fingers touch. Keeping your body in a straight line with abs braced, lower your torso until your chest is just above the floor and then press back up."
-            android:id="@+id/textView2"
-            android:layout_below="@id/imageView4"
-            android:layout_alignParentEnd="true" />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:id="@+id/play_button"
+            android:text="@string/video"
+            android:layout_below="@+id/videoView"/>
     </RelativeLayout>
 
 
