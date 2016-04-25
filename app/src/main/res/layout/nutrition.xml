@@ -5,17 +5,18 @@
     android:weightSum="1" android:background="@drawable/background">
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="360dp"
+        android:layout_height="100dp"
         android:text="New Button"
         android:id="@+id/calorie_button"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="360dp"
+        android:layout_height="100dp"
         android:text="New Button"
         android:id="@+id/mealplan"
+        android:layout_below="@+id/calorie_button"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>
