@@ -26,23 +26,29 @@ public class Cardio extends Activity{
         final VideoView videoView =(VideoView)findViewById(R.id.videoView);
         final VideoView videoView1 =(VideoView)findViewById(R.id.videoView2);
         final VideoView videoView2 =(VideoView)findViewById(R.id.videoView3);
+
         final MediaController mediaController= new MediaController(this);
         mediaController.setAnchorView(videoView);
+
         final MediaController mediaController1= new MediaController(this);
-        mediaController1.setAnchorView(videoView);
+        mediaController1.setAnchorView(videoView1);
+
         final MediaController mediaController2= new MediaController(this);
-        mediaController2.setAnchorView(videoView);
+        mediaController2.setAnchorView(videoView2);
 
         final Uri bikeVideo= Uri.parse("http://videocdn.bodybuilding.com/video/mp4/70000/71762m.mp4");
         final Uri treadmillVideo= Uri.parse("http://videocdn.bodybuilding.com/video/mp4/70000/71802m.mp4");
         final Uri rowingVideo= Uri.parse("http://videocdn.bodybuilding.com/video/mp4/70000/71862m.mp4");
 
+
         play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
+
                 videoView.setMediaController(mediaController);
                 videoView.setVideoURI(bikeVideo);
+                videoView.setVisibility(View.VISIBLE);
                 videoView.requestFocus();
                 videoView.start();
             }
@@ -53,6 +59,7 @@ public class Cardio extends Activity{
 
                 videoView1.setMediaController(mediaController1);
                 videoView1.setVideoURI(treadmillVideo);
+                videoView1.setVisibility(View.VISIBLE);
                 videoView1.requestFocus();
                 videoView1.start();
             }
@@ -63,6 +70,7 @@ public class Cardio extends Activity{
 
                 videoView2.setMediaController(mediaController2);
                 videoView2.setVideoURI(rowingVideo);
+                videoView2.setVisibility(View.VISIBLE);
                 videoView2.requestFocus();
                 videoView2.start();
             }
