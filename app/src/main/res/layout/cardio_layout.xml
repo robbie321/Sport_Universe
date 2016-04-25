@@ -16,8 +16,7 @@
             android:layout_width="fill_parent"
             android:layout_height="50dp"
             android:id="@+id/play_button"
-            android:text="@string/video"
-            android:layout_below="@+id/videoView"/>
+            android:text="@string/video" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -26,7 +25,7 @@
 \nSelect the desired option from the menu. You may have to start pedaling to turn it on. You can use the manual setting, or you can select a program to use. Typically, you can enter your age and weight to estimate the amount of calories burned during exercise. The level of resistance can be changed throughout the workout. The handles can be used to monitor your heart rate to help you stay at an appropriate intensity."
             android:id="@+id/textView2"
             android:textColor="#ff000000"
-            android:layout_below="@+id/imageView2"
+            android:layout_below="@+id/play_button"
             android:layout_alignStart="@+id/imageView2" />
 
         <VideoView
@@ -39,7 +38,7 @@
             android:layout_height="50dp"
             android:id="@+id/play_button2"
             android:text="@string/video"
-            android:layout_below="@+id/videoView"/>
+            />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -47,8 +46,8 @@
             android:text="                 TREADMILL\nTo begin, step onto the treadmill and select the desired option from the menu. Most treadmills have a manual setting, or you can select a program to run. Typically, you can enter your age and weight to estimate the amount of calories burned during exercise. Elevation can be adjusted to change the intensity of the workout.
 \nTreadmills offer convenience, cardiovascular benefits, and usually have less impact than jogging outside. A 150 lb person will burn almost 250 calories jogging for 30 minutes, compared to more than 450 calories running. Maintain proper posture as you jog, and only hold onto the handles when necessary, such as when dismounting or checking your heart rate"
             android:textColor="#ff000000"
-        android:layout_below="@+id/imageView2"
-        android:layout_alignStart="@+id/imageView2" />
+        android:layout_below="@+id/play_button2"
+        android:layout_alignStart="@+id/play_button2" />
 
         <VideoView
             android:id="@+id/videoView3"
@@ -60,7 +59,7 @@
             android:layout_height="50dp"
             android:id="@+id/play_button3"
             android:text="@string/video"
-            android:layout_below="@+id/videoView"/>
+           />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -69,8 +68,8 @@
 \nThere are three phases of movement when using a rower. The first phase is when you come forward on the rower. Your knees are bent and against your chest. Your upper body is leaning slightly forward while still maintaining good posture. Next, push against the foot pedals and extend your legs while bringing your hands to your upper abdominal area, squeezing your shoulders back as you do so. To avoid straining your back, use primarily your leg and hip muscles.
 \nThe recovery phase simply involves straightening your arms, bending the knees, and bringing your body forward again as you transition back into the first phase."
             android:textColor="#ff000000"
-            android:layout_below="@+id/imageView2"
-            android:layout_alignStart="@+id/imageView2" />
+            android:layout_below="@+id/play_button3"
+            android:layout_alignStart="@+id/play_button3" />
 
     </LinearLayout>
 
