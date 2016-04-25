@@ -1,7 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
     android:background="@drawable/background">
 
-</LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="360dp"
+            android:id="@+id/imageView2"
+            android:src="@drawable/airbike"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="                BICYCLE CRUNCHES \n1). From the starting position, keep your right leg extended so that it is hovering above the floor, and bring your left knee into your chest.b) Immediately after you’ve brought your left knee to your chest, extend your left leg completely so that it is straight and hovering above the floor.c) Bring your right knee into your chest (in a pedalling motion.)d) While your legs are pedalling, incorporate a twist in the upper body, meeting the knee at your chest with the opposite elbow (e.g. as you bring your left knee to your chest, twist your upper body to the right so that your right elbow touches your left knee."
+            android:id="@+id/textView"
+            android:textColor="#ff000000"
+            android:layout_below="@+id/imageView2"
+            android:layout_alignStart="@+id/imageView2" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="360dp"
+            android:id="@+id/imageView3"
+            android:src="@drawable/toetouch"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/arms"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="                          SEATED CABLE ROWS   \n1). From the starting position, crunch upwards while reaching up with your hands and touch your toes.b) Return to the starting position and repeat for 40 seconds."
+            android:id="@+id/textView1"
+            android:textColor="#ff000000"
+            android:layout_below="@+id/imageView3"
+            android:layout_alignStart="@+id/imageView2" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="360dp"
+            android:id="@+id/imageView4"
+            android:src="@drawable/sidecrunches"
+            android:layout_below="@id/textView1"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/arms"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="                          SIDE CRUNCHES   \n1). From the starting position, lift your upper body off the ground and crunch up.b) Repeat for twenty seconds on one side and then turn over and repeat on the other side for twenty seconds."
+            android:layout_below="@id/imageView4"
+            android:layout_alignParentEnd="false"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+
+</ScrollView>
