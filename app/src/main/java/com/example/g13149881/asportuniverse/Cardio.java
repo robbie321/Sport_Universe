@@ -24,6 +24,8 @@ public class Cardio extends Activity{
         Button play3 = (Button) findViewById(R.id.play_button3);
 
         final VideoView videoView =(VideoView)findViewById(R.id.videoView);
+        final VideoView videoView1 =(VideoView)findViewById(R.id.videoView2);
+        final VideoView videoView2 =(VideoView)findViewById(R.id.videoView3);
         final MediaController mediaController= new MediaController(this);
         mediaController.setAnchorView(videoView);
 
@@ -45,20 +47,20 @@ public class Cardio extends Activity{
             @Override
             public void onClick(View v) {
 
-                videoView.setMediaController(mediaController);
-                videoView.setVideoURI(treadmillVideo);
-                videoView.requestFocus();
-                videoView.start();
+                videoView1.setMediaController(mediaController);
+                videoView1.setVideoURI(treadmillVideo);
+                videoView1.requestFocus();
+                videoView1.start();
             }
         });
         play3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                videoView.setMediaController(mediaController);
-                videoView.setVideoURI(rowingVideo);
-                videoView.requestFocus();
-                videoView.start();
+                videoView2.setMediaController(mediaController);
+                videoView2.setVideoURI(rowingVideo);
+                videoView2.requestFocus();
+                videoView2.start();
             }
         });
 
