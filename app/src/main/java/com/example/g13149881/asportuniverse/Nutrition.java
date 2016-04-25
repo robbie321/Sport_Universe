@@ -11,5 +11,8 @@ public class Nutrition extends Activity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nutrition);
+
+        Button calorie = (Button) findViewById(R.id.calorie_button);
+        Button mealplan = (Button) findViewById(R.id.mealplan);
     }
 }
