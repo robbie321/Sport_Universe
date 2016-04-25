@@ -22,18 +22,18 @@
             android:layout_width="fill_parent"
             android:layout_height="100dp"
             android:id="@+id/lean_button"
-            android:background="@drawable/nutrition"
-            android:layout_below="@+id/exercise_button"
-            android:layout_alignStart="@+id/exercise_button"
-            android:textColor="#00000000"/>
+            android:background="@drawable/sevenleanmeals"
+            android:textColor="#00000000"
+            android:layout_below="@+id/bulk_button"
+            android:layout_alignParentStart="true" />
 
         <Button
             android:layout_width="fill_parent"
             android:layout_height="100dp"
             android:id="@+id/calories_button"
-            android:background="@drawable/cardio"
-            android:layout_below="@+id/nutrition_button"
-            android:layout_centerHorizontal="true"
-            android:textColor="#00000000"/>
+            android:background="@drawable/caloriecounter"
+            android:textColor="#00000000"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
 
     </RelativeLayout>

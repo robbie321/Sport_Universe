@@ -11,11 +11,11 @@ public class Nutrition extends Activity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nutrition);
-        Button Exercise = (Button) findViewById(R.id.exercise_button);
-        Button Nutrition = (Button) findViewById(R.id.nutrition_button);
-        Button Cardio = (Button) findViewById(R.id.cardio_button);
+        Button Bulk = (Button) findViewById(R.id.bulk_button);
+        Button Lean = (Button) findViewById(R.id.lean_button);
+        Button Cal = (Button) findViewById(R.id.calories_button);
 
-        Exercise.setOnClickListener(new View.OnClickListener() {
+        Bulk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -23,18 +23,19 @@ public class Nutrition extends Activity{
                 startActivity(myIntent);
             }
         });
-        Nutrition.setOnClickListener(new View.OnClickListener() {
+        Lean.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-
+                Intent myIntent = new Intent(Nutrition.this, Lean.class);
+                startActivity(myIntent);
             }
         });
-        Cardio.setOnClickListener(new View.OnClickListener() {
+        Cal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent myIntent = new Intent(Nutrition.this, Cardio.class);
+                Intent myIntent = new Intent(Nutrition.this, Calories.class);
                 startActivity(myIntent);
             }
         });
