@@ -20,18 +20,43 @@ public class Cardio extends Activity{
         setContentView(R.layout.cardio_layout);
 
         Button play = (Button) findViewById(R.id.play_button);
+        Button play2 = (Button) findViewById(R.id.play_button2);
+        Button play3 = (Button) findViewById(R.id.play_button3);
 
         final VideoView videoView =(VideoView)findViewById(R.id.videoView);
         final MediaController mediaController= new MediaController(this);
         mediaController.setAnchorView(videoView);
-        final Uri uri= Uri.parse("http://videocdn.bodybuilding.com/video/mp4/70000/71762m.mp4");
+
+        final Uri bikeVideo= Uri.parse("http://videocdn.bodybuilding.com/video/mp4/70000/71762m.mp4");
+        final Uri treadmillVideo= Uri.parse("http://videocdn.bodybuilding.com/video/mp4/70000/71802m.mp4");
+        final Uri rowingVideo= Uri.parse("http://videocdn.bodybuilding.com/video/mp4/70000/71862m.mp4");
 
         play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 videoView.setMediaController(mediaController);
-                videoView.setVideoURI(uri);
+                videoView.setVideoURI(bikeVideo);
+                videoView.requestFocus();
+                videoView.start();
+            }
+        });
+        play2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                videoView.setMediaController(mediaController);
+                videoView.setVideoURI(treadmillVideo);
+                videoView.requestFocus();
+                videoView.start();
+            }
+        });
+        play3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                videoView.setMediaController(mediaController);
+                videoView.setVideoURI(rowingVideo);
                 videoView.requestFocus();
                 videoView.start();
             }
