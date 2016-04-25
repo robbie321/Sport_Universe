@@ -15,5 +15,8 @@
     <string name="shoulder">Shoulder</string>
     <string name="arms">Arms</string>
     <string name="video">CLICK TO PLAY VIDEO TUTORIAL</string>
+    <string name="bulk">Bulk diet</string>
+    <string name="cal">Calorie Counter</string>
+    <string name="lean">7 Day lean diet plan</string>
 
 </resources>

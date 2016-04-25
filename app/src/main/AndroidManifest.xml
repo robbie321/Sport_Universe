@@ -42,6 +42,12 @@
         </activity>
         <activity android:name=".Abs_main" android:label="@string/abs">
         </activity>
+        <activity android:name=".Bulk" android:label="@string/bulk">
+        </activity>
+        <activity android:name=".Calories" android:label="@string/cal">
+        </activity>
+        <activity android:name=".Lean" android:label="@string/lean">
+        </activity>
         <activity   android:name=".Splashscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
