@@ -28,6 +28,10 @@ public class Cardio extends Activity{
         final VideoView videoView2 =(VideoView)findViewById(R.id.videoView3);
         final MediaController mediaController= new MediaController(this);
         mediaController.setAnchorView(videoView);
+        final MediaController mediaController1= new MediaController(this);
+        mediaController1.setAnchorView(videoView);
+        final MediaController mediaController2= new MediaController(this);
+        mediaController2.setAnchorView(videoView);
 
         final Uri bikeVideo= Uri.parse("http://videocdn.bodybuilding.com/video/mp4/70000/71762m.mp4");
         final Uri treadmillVideo= Uri.parse("http://videocdn.bodybuilding.com/video/mp4/70000/71802m.mp4");
@@ -47,7 +51,7 @@ public class Cardio extends Activity{
             @Override
             public void onClick(View v) {
 
-                videoView1.setMediaController(mediaController);
+                videoView1.setMediaController(mediaController1);
                 videoView1.setVideoURI(treadmillVideo);
                 videoView1.requestFocus();
                 videoView1.start();
@@ -57,7 +61,7 @@ public class Cardio extends Activity{
             @Override
             public void onClick(View v) {
 
-                videoView2.setMediaController(mediaController);
+                videoView2.setMediaController(mediaController2);
                 videoView2.setVideoURI(rowingVideo);
                 videoView2.requestFocus();
                 videoView2.start();
