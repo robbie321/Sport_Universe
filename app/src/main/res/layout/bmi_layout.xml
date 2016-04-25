@@ -33,7 +33,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="14dp"
         android:layout_marginTop="13dp"
-        android:textColor="#fffffcf9" />
+        android:textColor="#ff000000" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -43,7 +43,7 @@
         android:id="@+id/height"
         android:layout_alignBottom="@+id/textView_height"
         android:layout_alignStart="@+id/weight"
-        android:textColor="#fffffcf9" />
+        android:textColor="#ff000000" />
 
     <Button
         android:layout_width="365dp"
