@@ -32,6 +32,7 @@
             android:id="@+id/videoView2"
             android:layout_width="360dp"
             android:layout_height="360dp"
+            android:layout_below="@+id/textView2"
             />
         <Button
             android:layout_width="fill_parent"
@@ -46,6 +47,7 @@
             android:text="                 TREADMILL\nTo begin, step onto the treadmill and select the desired option from the menu. Most treadmills have a manual setting, or you can select a program to run. Typically, you can enter your age and weight to estimate the amount of calories burned during exercise. Elevation can be adjusted to change the intensity of the workout.
 \nTreadmills offer convenience, cardiovascular benefits, and usually have less impact than jogging outside. A 150 lb person will burn almost 250 calories jogging for 30 minutes, compared to more than 450 calories running. Maintain proper posture as you jog, and only hold onto the handles when necessary, such as when dismounting or checking your heart rate"
             android:textColor="#ff000000"
+            android:id="@+id/textView3"
         android:layout_below="@+id/play_button2"
         android:layout_alignStart="@+id/play_button2" />
 
@@ -53,6 +55,7 @@
             android:id="@+id/videoView3"
             android:layout_width="360dp"
             android:layout_height="360dp"
+            android:layout_below="@+id/textView3"
             />
         <Button
             android:layout_width="fill_parent"
