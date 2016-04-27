@@ -11,7 +11,7 @@
             android:layout_width="fill_parent"
             android:layout_height="100dp"
             android:id="@+id/bulk_button"
-            android:background="@drawable/exercises"
+            android:background="@drawable/bulkup"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:textColor="#00000000"/>
