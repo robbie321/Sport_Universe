@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
+    public static int sum,max;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +21,8 @@ public class MainActivity extends Activity {
         Button Cardio = (Button) findViewById(R.id.cardio_button);
         Button Stopwatch = (Button) findViewById(R.id.stopwatch);
         Button BMI = (Button) findViewById(R.id.bmi_button);
+
+
 
         Exercise.setOnClickListener(new View.OnClickListener() {
             @Override
