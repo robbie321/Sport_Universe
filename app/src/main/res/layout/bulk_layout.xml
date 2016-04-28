@@ -7,31 +7,31 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ImageView
-            android:layout_width="360dp"
+            android:layout_width="fill_parent"
             android:layout_height="match_parent"
             android:id="@+id/imageView"
             android:src="@drawable/beast1"
-            android:contentDescription="@string/arms" />
+             />
         <ImageView
-            android:layout_width="360dp"
+            android:layout_width="fill_parent"
             android:layout_height="match_parent"
             android:id="@+id/imageView2"
             android:src="@drawable/beast2"
-            android:contentDescription="@string/arms"
+
             android:layout_below="@+id/imageView"/>
         <ImageView
-            android:layout_width="360dp"
+            android:layout_width="fill_parent"
             android:layout_height="match_parent"
             android:id="@+id/imageView4"
             android:src="@drawable/beast3"
-            android:contentDescription="@string/arms"
+
             android:layout_below="@+id/imageView2"/>
         <ImageView
-            android:layout_width="360dp"
+            android:layout_width="fill_parent"
             android:layout_height="match_parent"
             android:id="@+id/imageView5"
             android:src="@drawable/beast5"
-            android:contentDescription="@string/arms"
+
             android:layout_below="@+id/imageView4"/>
 
     </RelativeLayout>

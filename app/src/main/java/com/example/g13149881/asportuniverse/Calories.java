@@ -25,8 +25,11 @@ public class Calories extends MainActivity {
         final TextView total = (TextView) findViewById(R.id.totalcals);
         final TextView totalcalsSet = (TextView) findViewById(R.id.target_textView);
 
-        if(!(sum == 0)){
+        if(!(max == 0)){
             totalcalsSet.setText(String.valueOf(max));
+        }
+        if(!(sum == 0)){
+            total.setText(String.valueOf(sum));
         }
 
         Button add = (Button) findViewById(R.id.button_add);
