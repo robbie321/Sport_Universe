@@ -6,21 +6,21 @@ import android.os.Bundle;
 import android.os.Handler;
 
 /**
- * Created by mblackweir on 08/04/2016.
+ * Created by g13155105 on 08/04/2016.
  */
 
 public class Splashscreen extends Activity {
-    /** Duration of wait **/
+    //Duration of wait
     private final int SPLASH_DISPLAY_LENGTH = 2000;
 
-    /** Called when the activity is first created. */
+    //Called when the activity is first created.
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         setContentView(R.layout.splashscreen_layout);
 
-        /* New Handler to start the Menu-Activity
-         * and close this Splash-Screen after some seconds.*/
+        // New Handler to start the Menu-Activity
+        //and close this Splash-Screen after some seconds.
         new Handler().postDelayed(new Runnable(){
             @Override
             public void run() {
