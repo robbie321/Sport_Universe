@@ -81,5 +81,13 @@
         android:layout_alignTop="@+id/setTarget"
         android:layout_alignStart="@+id/button_add" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:id="@+id/button_reset"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
 
 </RelativeLayout>
