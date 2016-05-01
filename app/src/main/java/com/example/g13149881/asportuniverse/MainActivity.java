@@ -11,7 +11,6 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
-    public static int sum,max;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
