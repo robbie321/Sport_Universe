@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
     tools:context="com.example.g13149881.asportuniverse.MainActivity">
     <RelativeLayout
         android:layout_width="match_parent"
@@ -12,9 +11,9 @@
 
     <Button
         android:layout_width="fill_parent"
-        android:layout_height="100dp"
+        android:layout_height="143dp"
         android:id="@+id/exercise_button"
-        android:background="@drawable/exercises"
+        android:background="@drawable/exercisesn"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:textColor="#00000000"/>
@@ -23,36 +22,36 @@
 
     <Button
         android:layout_width="fill_parent"
-        android:layout_height="100dp"
+        android:layout_height="143dp"
         android:id="@+id/nutrition_button"
-        android:background="@drawable/nutrition"
+        android:background="@drawable/nutritionn"
+        android:textColor="#00000000"
         android:layout_below="@+id/exercise_button"
-        android:layout_alignStart="@+id/exercise_button"
-        android:textColor="#00000000"/>
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="fill_parent"
-        android:layout_height="100dp"
+        android:layout_height="143dp"
         android:id="@+id/cardio_button"
-        android:background="@drawable/cardio"
+        android:background="@drawable/cardion"
         android:layout_below="@+id/nutrition_button"
         android:layout_centerHorizontal="true"
         android:textColor="#00000000"/>
     <Button
         android:layout_width="fill_parent"
-        android:layout_height="100dp"
+        android:layout_height="143dp"
         android:id="@+id/stopwatch"
-        android:background="@drawable/stopwatch"
+        android:background="@drawable/stopwatchn"
         android:textColor="#00000000"
         android:layout_below="@+id/bmi_button"
-        android:layout_alignStart="@+id/cardio_button" />
+        android:layout_alignParentStart="true" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="fill_parent"
-        android:layout_height="100dp"
+        android:layout_height="143dp"
         android:id="@+id/bmi_button"
-        android:background="@drawable/bmi"
+        android:background="@drawable/bmin"
         android:textColor="#00000000"
         android:layout_below="@+id/cardio_button"
         android:layout_centerHorizontal="true" />

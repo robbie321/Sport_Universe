@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:weightSum="1"
-    android:background="@drawable/background">
+    android:weightSum="1">
 
 
     <Button
@@ -13,7 +12,7 @@
         android:layout_gravity="center_vertical"
         android:layout_below="@+id/chronometer"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/start"
+        android:background="@drawable/startn"
         android:textColor="#00000000" />
 
     <Chronometer
@@ -35,7 +34,7 @@
         android:layout_gravity="center_vertical"
         android:layout_below="@+id/start"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/stop"
+        android:background="@drawable/stopn"
         android:textColor="#00000000" />
 
     <Button
@@ -46,7 +45,7 @@
         android:layout_gravity="center_vertical"
         android:layout_below="@+id/stop"
         android:layout_alignStart="@+id/stop"
-        android:background="@drawable/reset"
+        android:background="@drawable/resetn"
         android:textColor="#00000000" />
 
 </RelativeLayout>
