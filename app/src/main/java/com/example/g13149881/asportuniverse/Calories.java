@@ -101,6 +101,8 @@ public class Calories extends Activity {
                         notificationManager.notify(0, notification );
                     counter++;
                 }
+                //Clearing the EditText after you've added your calories
+                enterCalories.setText("");
             }
         });
         //button handler for set
@@ -119,6 +121,8 @@ public class Calories extends Activity {
                     //display the max target set
                     totalcalsSet.setText(String.valueOf(max));
                 }
+                //Clearing the EditText after you've set you target
+                enterTarget.setText("");
             }
         });
         //button handle to reset the sum,max and counter values
@@ -130,6 +134,8 @@ public class Calories extends Activity {
                 max=0;
                 sum=0;
                 counter=0;
+                totalcalsSet.setText("0");
+                total.setText("0");
             }
         });
     }

@@ -18,15 +18,17 @@ public class Cardio extends Activity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.cardio_layout);
-
+        //handles for each button
         Button play = (Button) findViewById(R.id.play_button);
         Button play2 = (Button) findViewById(R.id.play_button2);
         Button play3 = (Button) findViewById(R.id.play_button3);
 
+        //handles for each of the videoViews
         final VideoView videoView =(VideoView)findViewById(R.id.videoView);
         final VideoView videoView1 =(VideoView)findViewById(R.id.videoView2);
         final VideoView videoView2 =(VideoView)findViewById(R.id.videoView3);
 
+        //MediaControllers for each of the videoViews
         final MediaController mediaController= new MediaController(this);
         mediaController.setAnchorView(videoView);
 
@@ -36,11 +38,13 @@ public class Cardio extends Activity{
         final MediaController mediaController2= new MediaController(this);
         mediaController2.setAnchorView(videoView2);
 
+        //Links for each of the videoViews
         final Uri bikeVideo= Uri.parse("http://videocdn.bodybuilding.com/video/mp4/70000/71762m.mp4");
         final Uri treadmillVideo= Uri.parse("http://videocdn.bodybuilding.com/video/mp4/70000/71802m.mp4");
         final Uri rowingVideo= Uri.parse("http://videocdn.bodybuilding.com/video/mp4/70000/71862m.mp4");
 
 
+        //listener for the first button, once clicked the videoView Becomes visible and plays the Videos from the set VideoURI
         play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,6 +57,7 @@ public class Cardio extends Activity{
                 videoView.start();
             }
         });
+        //listener for the second button, once clicked the videoView Becomes visible and plays the Videos from the set VideoURI
         play2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -64,6 +69,8 @@ public class Cardio extends Activity{
                 videoView1.start();
             }
         });
+
+        //listener for the third button, once clicked the videoView Becomes visible and plays the Videos from the set VideoURI
         play3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
